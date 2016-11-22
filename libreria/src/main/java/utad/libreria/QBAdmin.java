@@ -5,4 +5,6 @@ package utad.libreria;
  */
 public class QBAdmin {
 
+
+
 }
