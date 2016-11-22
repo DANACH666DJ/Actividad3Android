@@ -7,17 +7,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TextFragment extends Fragment {
+public class RegistroFragment extends Fragment {
 
-    public Button btn;
+    public TextView texto;
 
 
-    public TextFragment() {
+    public RegistroFragment() {
         // Required empty public constructor
     }
 
@@ -27,9 +28,11 @@ public class TextFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View v=inflater.inflate(R.layout.fragment_text, container, false);
-        btn=(Button)v.findViewById(R.id.button);
+        View v=inflater.inflate(R.layout.fragment_registro, container, false);
+        texto=(TextView) v.findViewById(R.id.textoRegistro);
         return v;
+
+
 
 
 

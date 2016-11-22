@@ -16,6 +16,7 @@ public class LoginFragment extends Fragment {
     public TextView texto;
 
 
+
     public LoginFragment() {
         // Required empty public constructor
     }

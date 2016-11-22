@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-     TextFragment testFragment;
+     RegistroFragment registroFragment;
 
 
     @Override
@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FragmentManager fm=getSupportFragmentManager();
-        testFragment=(TextFragment)fm.findFragmentById(R.id.MiFragmento);
+        registroFragment=(RegistroFragment)fm.findFragmentById(R.id.fragmentRegistro);
         FragmentTransaction transaction=fm.beginTransaction();
-        transaction.hide(testFragment);
-        transaction.show(testFragment);
+        transaction.hide(registroFragment);
+
         transaction.commit();
 
 

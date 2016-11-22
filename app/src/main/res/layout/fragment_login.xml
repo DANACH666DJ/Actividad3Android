@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="utad.actividad3android.LoginFragment"
-    android:background="@android:color/darker_gray">
+    tools:context="utad.actividad3android.LoginFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -17,8 +16,21 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/textoLogin"
-            android:gravity="center_horizontal"
-            android:textSize="26dp" />
+            android:textSize="26dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir a Registro"
+            android:id="@+id/botonRegistro"
+            android:gravity="center_horizontal" />
     </LinearLayout>
 
 
