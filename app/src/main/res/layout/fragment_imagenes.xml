@@ -11,21 +11,24 @@
         android:layout_height="match_parent"
         android:id="@+id/imagen1"
         android:visibility="visible"
-        android:src="@mipmap/adidas"/>
+        android:src="@drawable/nikeweb"
+        android:scaleType="fitXY"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imagen2"
         android:visibility="invisible"
-        android:src="@mipmap/nike"/>
+        android:src="@drawable/utadweb"
+        android:scaleType="fitXY"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imagen3"
         android:visibility="invisible"
-        android:src="@mipmap/utad"/>
+        android:src="@drawable/androidweb"
+        android:scaleType="fitXY"/>
 
 
 

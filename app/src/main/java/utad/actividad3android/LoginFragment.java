@@ -29,6 +29,7 @@ public class LoginFragment extends Fragment {
         texto=(TextView) v.findViewById(R.id.textoLogin);
         return v;
 
+
     }
 
 }
