@@ -5,33 +5,25 @@
     tools:context="utad.actividad3android.LoginFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="LOGIN"
+        android:id="@+id/textoLogin"
+        android:textSize="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@color/primary_text_disabled_material_light"/>
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:id="@+id/textoLogin"
-            android:textSize="26dp"
-            android:gravity="center_horizontal" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ir a Registro"
-            android:id="@+id/botonRegistro"
-            android:gravity="center_horizontal" />
-    </LinearLayout>
-
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Registro"
+        android:id="@+id/button"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

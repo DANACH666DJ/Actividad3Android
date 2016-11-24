@@ -8,17 +8,94 @@
     <!-- TODO: Update blank fragment layout -->
 
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:id="@+id/textoRegistro"
+        android:textSize="26dp"
+        android:gravity="center_horizontal"
+        android:background="@color/primary_text_disabled_material_light" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registro"
-            android:id="@+id/textoRegistro"
-            android:gravity="center_horizontal"
-            android:textSize="26dp" />
-    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Login"
+        android:id="@+id/buttonLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NombreUsuario"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textoRegistro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNombreUsuario"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:layout_below="@+id/editTextNombreUsuario"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignEnd="@+id/editTextNombreUsuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:id="@+id/textViewContraseña"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextContraseña"
+        android:layout_below="@+id/textViewContraseña"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_alignEnd="@+id/editTextEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repetir contraseña"
+        android:id="@+id/textViewRepetirContraseña"
+        android:textSize="20dp"
+        android:layout_below="@+id/editTextContraseña"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextRepetirContraseña"
+        android:layout_below="@+id/textViewRepetirContraseña"
+        android:layout_alignEnd="@+id/textViewRepetirContraseña"
+        android:layout_alignStart="@+id/textViewRepetirContraseña" />
 </RelativeLayout>
