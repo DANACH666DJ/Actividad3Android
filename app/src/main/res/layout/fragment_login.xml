@@ -16,14 +16,37 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:background="@color/primary_text_disabled_material_light"/>
+        android:background="@color/primary_text_disabled_material_light"
+        tools:ignore="HardcodedText,PrivateResource,SpUsage" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ir a Registro"
         android:id="@+id/button"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="35dp"
+        tools:ignore="HardcodedText"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_marginTop="148dp"
+        android:id="@+id/editText"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textoLogin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="NombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/editText"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

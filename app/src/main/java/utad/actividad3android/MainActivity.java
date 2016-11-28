@@ -4,12 +4,15 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
      RegistroFragment registroFragment;
      LoginFragment loginFragment;
      ImagenesFragment imgFragment;
-
+     Button btnLogin ;
+     FragmentTransaction transaction;
+     MainActivityController controlador;
 
 
     @Override
@@ -21,15 +24,19 @@ public class MainActivity extends AppCompatActivity {
         loginFragment=(LoginFragment) fm.findFragmentById(R.id.fragmentLogin);
         imgFragment=(ImagenesFragment)fm.findFragmentById(R.id.fragmentImagenes);
 
-        FragmentTransaction transaction=fm.beginTransaction();
+
+        btnLogin=(Button)registroFragment.getView().findViewById(R.id.buttonLogin);
+        btnLogin.setOnClickListener(controlador);
+
+        transaction=fm.beginTransaction();
         cambiarFragment(1);
-        transaction.commit();
+        //transaction.commit();
 
     }
 
     public void cambiarFragment(int ifrg){
         FragmentManager fm=getSupportFragmentManager();
-        FragmentTransaction transaction=fm.beginTransaction();
+        transaction=fm.beginTransaction();
         transaction.hide(loginFragment);
         transaction.hide(registroFragment);
         transaction.hide(imgFragment);

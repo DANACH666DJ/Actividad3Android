@@ -36,6 +36,8 @@ public class RegistroFragment extends Fragment {
 
 
 
+
+
     }
 
 }
