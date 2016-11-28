@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
      LoginFragment loginFragment;
      ImagenesFragment imgFragment;
      Button btnLogin ;
+     Button btnRegistro;
      FragmentTransaction transaction;
      MainActivityController controlador;
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        controlador=new MainActivityController(this);
         FragmentManager fm=getSupportFragmentManager();
         registroFragment=(RegistroFragment)fm.findFragmentById(R.id.fragmentRegistro);
         loginFragment=(LoginFragment) fm.findFragmentById(R.id.fragmentLogin);
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogin=(Button)registroFragment.getView().findViewById(R.id.buttonLogin);
         btnLogin.setOnClickListener(controlador);
+        btnRegistro=(Button)loginFragment.getView().findViewById(R.id.botonRegistro);
+        btnRegistro.setOnClickListener(controlador);
 
         transaction=fm.beginTransaction();
         cambiarFragment(1);

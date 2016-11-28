@@ -8,7 +8,7 @@ import android.view.View;
 
 public class MainActivityController implements View.OnClickListener,View.OnFocusChangeListener{
     MainActivity vista;
-    int num;
+
 
 
 
@@ -20,14 +20,12 @@ public class MainActivityController implements View.OnClickListener,View.OnFocus
 
     @Override
     public void onClick(View view) {
-        if(view.getId()==vista.btnLogin.getId()){
-            vista.transaction.show(vista.loginFragment);
-            vista.transaction.hide(vista.registroFragment);
-            vista.transaction.commitNow();
+        if (view.getId() == vista.btnLogin.getId()) {
+            vista.cambiarFragment(3);
+            //vista.transaction.commitNow();
+        }else if(view.getId()==vista.btnRegistro.getId()){
+            vista.cambiarFragment(2);
         }
-
-
-
     }
 
     @Override
