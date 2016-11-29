@@ -69,6 +69,7 @@ public class ImagenesFragment extends Fragment {
         significa cada cuanto tiempo realiza la tarea*/
         timer.schedule(timerTask,2000,2000);
 
+
         return v;
 
     }
