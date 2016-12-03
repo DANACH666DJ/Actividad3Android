@@ -19,6 +19,7 @@ public class RegistroFragment extends Fragment {
     public EditText nombre;
     public EditText email;
     public EditText contraseña;
+    public EditText repetirContraseña;
     public Button btnLogin;
     public Button btnOkRegistro;
 
@@ -41,6 +42,7 @@ public class RegistroFragment extends Fragment {
         nombre=(EditText)v.findViewById(R.id.editTextNombreUsuario);
         email=(EditText)v.findViewById(R.id.editTextEmail);
         contraseña=(EditText)v.findViewById(R.id.editTextContraseña);
+        repetirContraseña=(EditText)v.findViewById(R.id.editTextRepetirContraseña);
 
 
 

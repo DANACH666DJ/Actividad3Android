@@ -38,15 +38,15 @@ public class MainActivity extends AppCompatActivity  {
         imgFragment=(ImagenesFragment)fm.findFragmentById(R.id.fragmentImagenes);
 
 
-        btnLogin=(Button)registroFragment.getView().findViewById(R.id.buttonLogin);
+        btnLogin=registroFragment.btnLogin;
         btnLogin.setOnClickListener(controlador);
-        btnRegistro=(Button)loginFragment.getView().findViewById(R.id.botonRegistro);
+        btnRegistro=loginFragment.btnRegistro;
         btnRegistro.setOnClickListener(controlador);
 
-        btnOkLogin=(Button)loginFragment.getView().findViewById(R.id.btnOk);
+        btnOkLogin=loginFragment.btnOkLogin;
         btnOkLogin.setOnClickListener(controlador);
 
-        btnOkRegistro=(Button)registroFragment.getView().findViewById(R.id.btnOkRegistro);
+        btnOkRegistro=registroFragment.btnOkRegistro;
         btnOkRegistro.setOnClickListener(controlador);
 
         transaction=fm.beginTransaction();

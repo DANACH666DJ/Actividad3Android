@@ -18,7 +18,7 @@ public class LoginFragment extends Fragment {
     public EditText usuario;
     public EditText contraseña;
     public Button btnRegistro;
-    public Button btnOk;
+    public Button btnOkLogin;
 
 
 
@@ -34,7 +34,7 @@ public class LoginFragment extends Fragment {
         usuario=(EditText)v.findViewById(R.id.usuario);
         contraseña=(EditText)v.findViewById(R.id.contraseña);
         btnRegistro=(Button)v.findViewById(R.id.botonRegistro);
-        btnOk=(Button)v.findViewById(R.id.btnOk);
+        btnOkLogin=(Button)v.findViewById(R.id.btnOkLogin);
         return v;
 
 

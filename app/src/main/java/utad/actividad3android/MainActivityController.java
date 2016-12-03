@@ -33,7 +33,7 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
             //vista.transaction.commitNow();
         } else if (view.getId() == vista.btnRegistro.getId()) {
             vista.cambiarFragment(2);
-        } else if (view.getId() == vista.loginFragment.btnOk.getId()) {
+        } else if (view.getId() == vista.loginFragment.btnOkLogin.getId()) {
             String usuario = vista.loginFragment.usuario.getText().toString();
             String contraseña = vista.loginFragment.contraseña.getText().toString();
             qbAdmin.Login(usuario, contraseña);

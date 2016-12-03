@@ -73,7 +73,7 @@
         android:text="Ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnOk"
+        android:id="@+id/btnOkLogin"
         android:layout_below="@+id/contraseña"
         android:layout_alignStart="@+id/textView2" />
 
