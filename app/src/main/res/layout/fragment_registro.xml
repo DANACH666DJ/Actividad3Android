@@ -17,15 +17,6 @@
         android:gravity="center_horizontal"
         android:background="@color/primary_text_disabled_material_light" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ir a Login"
-        android:id="@+id/buttonLogin"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,4 +89,22 @@
         android:layout_below="@+id/textViewRepetirContraseña"
         android:layout_alignEnd="@+id/textViewRepetirContraseña"
         android:layout_alignStart="@+id/textViewRepetirContraseña" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Login"
+        android:id="@+id/buttonLogin"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textViewContraseña" />
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOkRegistro"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
 </RelativeLayout>

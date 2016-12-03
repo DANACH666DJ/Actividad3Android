@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -15,9 +16,11 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class RegistroFragment extends Fragment {
-
-    public TextView texto;
+    public EditText nombre;
+    public EditText email;
+    public EditText contraseña;
     public Button btnLogin;
+    public Button btnOkRegistro;
 
 
     public RegistroFragment() {
@@ -32,8 +35,12 @@ public class RegistroFragment extends Fragment {
 
 
         View v=inflater.inflate(R.layout.fragment_registro, container, false);
-        texto=(TextView) v.findViewById(R.id.textoRegistro);
+
         btnLogin=(Button)v.findViewById(R.id.buttonLogin);
+        btnOkRegistro=(Button)v.findViewById(R.id.btnOkRegistro);
+        nombre=(EditText)v.findViewById(R.id.editTextNombreUsuario);
+        email=(EditText)v.findViewById(R.id.editTextEmail);
+        contraseña=(EditText)v.findViewById(R.id.editTextContraseña);
 
 
 

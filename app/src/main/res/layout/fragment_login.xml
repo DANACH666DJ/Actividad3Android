@@ -19,16 +19,6 @@
         android:background="@color/primary_text_disabled_material_light"
         tools:ignore="HardcodedText,PrivateResource,SpUsage" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ir a Registro"
-        android:id="@+id/botonRegistro"
-        android:layout_marginBottom="35dp"
-        tools:ignore="HardcodedText"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,5 +58,23 @@
         android:textSize="24sp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Registro"
+        android:id="@+id/botonRegistro"
+        android:layout_marginBottom="19dp"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOk"
+        android:layout_below="@+id/contraseña"
+        android:layout_alignStart="@+id/textView2" />
 
 </RelativeLayout>

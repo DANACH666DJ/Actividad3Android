@@ -6,14 +6,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import com.quickblox.core.model.QBBaseCustomObject;
+import com.quickblox.users.model.QBUser;
+
+import java.util.ArrayList;
+
+import utad.libreria.QBAdmin;
+import utad.libreria.QBAdminListener;
+
+public class MainActivity extends AppCompatActivity  {
      RegistroFragment registroFragment;
      LoginFragment loginFragment;
      ImagenesFragment imgFragment;
      Button btnLogin ;
      Button btnRegistro;
+     Button btnOkLogin;
+     Button btnOkRegistro;
      FragmentTransaction transaction;
      MainActivityController controlador;
+
 
 
     @Override
@@ -31,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(controlador);
         btnRegistro=(Button)loginFragment.getView().findViewById(R.id.botonRegistro);
         btnRegistro.setOnClickListener(controlador);
+
+        btnOkLogin=(Button)loginFragment.getView().findViewById(R.id.btnOk);
+        btnOkLogin.setOnClickListener(controlador);
+
+        btnOkRegistro=(Button)registroFragment.getView().findViewById(R.id.btnOkRegistro);
+        btnOkRegistro.setOnClickListener(controlador);
 
         transaction=fm.beginTransaction();
         cambiarFragment(1);

@@ -45,7 +45,7 @@ public class ImagenesFragment extends Fragment {
             @Override
             public void run() {
 
-                getActivity().runOnUiThread(new Runnable(){
+                mainActivity.runOnUiThread(new Runnable(){
                     public void run() {
                         Log.v("ImagenesFragment","HOLA!!!! ");
                         if(imagen1.getVisibility()==View.VISIBLE){
@@ -54,12 +54,15 @@ public class ImagenesFragment extends Fragment {
                         }else if(imagen2.getVisibility()==View.VISIBLE){
                             imagen2.setVisibility(View.INVISIBLE);
                             imagen3.setVisibility(View.VISIBLE);
-                        }else if(imagen3.getVisibility()==View.VISIBLE){
-                            timer.cancel();
-                            mainActivity.cambiarFragment(2);
                         }
                     }
                 });
+
+                if(imagen3.getVisibility()==View.VISIBLE){
+                    timer.cancel();
+                    mainActivity.cambiarFragment(2);
+                }
+
 
             }
         };
