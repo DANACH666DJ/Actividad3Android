@@ -97,14 +97,14 @@
         android:id="@+id/buttonLogin"
         android:layout_marginBottom="13dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/textViewContraseña" />
+        android:layout_alignEnd="@+id/editTextContraseña"
+        android:layout_alignStart="@+id/editTextContraseña" />
 
     <Button
         android:text="Ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnOkRegistro"
-        android:layout_above="@+id/buttonLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp" />
+        android:layout_below="@+id/editTextRepetirContraseña"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

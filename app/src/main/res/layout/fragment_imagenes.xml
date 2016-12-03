@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:id="@+id/imagen1"
         android:visibility="visible"
-        android:src="@drawable/nikeweb"
+        android:src="@drawable/batman"
         android:scaleType="fitXY"/>
 
     <ImageView
@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:id="@+id/imagen2"
         android:visibility="invisible"
-        android:src="@drawable/utadweb"
+        android:src="@drawable/dragon"
         android:scaleType="fitXY"/>
 
     <ImageView
@@ -27,7 +27,7 @@
         android:layout_height="match_parent"
         android:id="@+id/imagen3"
         android:visibility="invisible"
-        android:src="@drawable/androidweb"
+        android:src="@drawable/tronos"
         android:scaleType="fitXY"/>
 
 

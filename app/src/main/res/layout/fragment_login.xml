@@ -25,7 +25,6 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_marginTop="148dp"
-        android:layout_below="@+id/textView"
         android:id="@+id/usuario"
         android:gravity="center_horizontal"
         android:layout_centerHorizontal="true" />
@@ -60,21 +59,22 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ir a Registro"
-        android:id="@+id/botonRegistro"
-        android:layout_marginBottom="19dp"
-        tools:ignore="HardcodedText"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/textView5" />
-
-    <Button
         android:text="Ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnOkLogin"
+        android:layout_marginTop="11dp"
         android:layout_below="@+id/contraseña"
         android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Registro"
+        android:id="@+id/botonRegistro"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/btnOkLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
 
 </RelativeLayout>

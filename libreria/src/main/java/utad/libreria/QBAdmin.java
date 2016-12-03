@@ -38,12 +38,13 @@ public class QBAdmin {
             @Override
             public void onSuccess(QBSession session, Bundle params) {
                 // You have successfully created the session
-                //
+                Log.v("Controller", "Inicio de sesión correcto");
                 // Now you can use QuickBlox API!
             }
 
             @Override
             public void onError(QBResponseException errors) {
+                Log.v("Controller", "Inicio de sesión fallido");
 
             }
         });
@@ -54,7 +55,7 @@ public class QBAdmin {
     public void Login(String suser, String pass) {
         QBUser users = new QBUser(suser, pass);
 
-        //Log.d(suser,pass);
+
         QBUsers.signIn(users, new QBEntityCallback<QBUser>() {
 
             public void onSuccess(QBUser user, Bundle params) {
@@ -71,23 +72,28 @@ public class QBAdmin {
 
     }
 
-    public void Registro(String nombre, String email , String contraseña) {
-        QBUser users = new QBUser(nombre, contraseña);
-        //users.setEmail(email);
+    public void Registro(String nombre, String email, final String contraseña, final String repetirContraseña) {
+
+        final QBUser users = new QBUser(nombre, contraseña);
+
+        users.setEmail(email);
+        users.setFullName(nombre);
+
 
         QBUsers.signUp(users, new QBEntityCallback<QBUser>() {
             @Override
-            public void onSuccess(QBUser user, Bundle args) {
-                listener.registrado(true,user);
 
+            public void onSuccess(QBUser user, Bundle args) {
+                    listener.registrado(true, user);
             }
+
 
             @Override
             public void onError(QBResponseException errors) {
-
-
+                    listener.registrado(false, users);
             }
         });
+
 
     }
 
@@ -95,9 +101,6 @@ public class QBAdmin {
     public void selectTabla() {
         //listener.datosDescargados();
     }
-
-
-
 
 
 }
