@@ -3,7 +3,9 @@ package utad.libreria;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.MainThread;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.quickblox.auth.QBAuth;
 import com.quickblox.auth.model.QBSession;
@@ -72,27 +74,34 @@ public class QBAdmin {
 
     }
 
-    public void Registro(String nombre, String email, final String contraseña, final String repetirContraseña) {
+    public void Registro(String nombre, String email, String contraseña,  String repetirContraseña) {
 
-        final QBUser users = new QBUser(nombre, contraseña);
+        final QBUser users = new QBUser(nombre, contraseña,repetirContraseña);
 
         users.setEmail(email);
         users.setFullName(nombre);
 
+        if(contraseña.equals(repetirContraseña)) {
 
-        QBUsers.signUp(users, new QBEntityCallback<QBUser>() {
-            @Override
 
-            public void onSuccess(QBUser user, Bundle args) {
+            QBUsers.signUp(users, new QBEntityCallback<QBUser>() {
+                @Override
+
+
+                public void onSuccess(QBUser user, Bundle args) {
                     listener.registrado(true, user);
-            }
+                }
 
 
-            @Override
-            public void onError(QBResponseException errors) {
+                @Override
+                public void onError(QBResponseException errors) {
                     listener.registrado(false, users);
-            }
-        });
+                }
+            });
+
+        }else{
+            Log.v("Controller", "Las contraseñas no son iguales");
+        }
 
 
     }

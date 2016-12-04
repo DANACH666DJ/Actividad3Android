@@ -45,8 +45,6 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
             String contraseña = vista.registroFragment.contraseña.getText().toString();
             String repetirContraseña = vista.registroFragment.repetirContraseña.getText().toString();
             qbAdmin.Registro(nombre, email, contraseña, repetirContraseña);
-
-
         }
     }
 
@@ -71,6 +69,7 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+
         }
 
     }
@@ -84,13 +83,13 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+            vista.cambiarFragment(3);
         } else if (registrado == false) {
             Context context = vista.getApplicationContext();
-            CharSequence text = "Introduce la misma contraseña";
+            CharSequence text = "El usuario ya existe ";
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-
         }
 
     }
