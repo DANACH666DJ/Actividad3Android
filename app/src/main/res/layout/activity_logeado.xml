@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="66dp"
-        android:id="@+id/button2"
+        android:id="@+id/btnEngland"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
@@ -23,8 +23,8 @@
         android:text="Spain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_above="@+id/button2"
+        android:id="@+id/btnSpain"
+        android:layout_above="@+id/btnEngland"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="19dp" />
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/button4" />
+        android:id="@+id/btnFrance" />
 
     <TextView
         android:text="TextView"
@@ -43,14 +43,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="121dp"
-        android:id="@+id/textView7" />
+        android:id="@+id/txtNombre1" />
 
     <TextView
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView7"
+        android:layout_below="@+id/txtNombre1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="57dp"
-        android:id="@+id/textView8" />
+        android:id="@+id/txtNombre2" />
 </RelativeLayout>

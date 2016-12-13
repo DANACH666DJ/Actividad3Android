@@ -8,6 +8,7 @@ import com.quickblox.users.model.QBUser;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import utad.libreria.QBAdmin;
 import utad.libreria.QBAdminListener;
 
 /**
@@ -15,7 +16,14 @@ import utad.libreria.QBAdminListener;
  */
 
 public class LoginControlador implements View.OnClickListener, View.OnFocusChangeListener, QBAdminListener {
-    ActivityLogeado vistaLog;
+    ActivityLogeado vista;
+    QBAdmin qbAdmin;
+
+
+    public LoginControlador(ActivityLogeado vista) {
+        this.vista= vista;
+        qbAdmin = new QBAdmin(this, vista);
+    }
 
 
     @Override
