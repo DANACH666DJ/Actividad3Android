@@ -12,8 +12,17 @@ import com.quickblox.auth.model.QBSession;
 import com.quickblox.core.QBEntityCallback;
 import com.quickblox.core.QBSettings;
 import com.quickblox.core.exception.QBResponseException;
+import com.quickblox.core.model.QBBaseCustomObject;
+import com.quickblox.core.request.QBRequestBuilder;
+import com.quickblox.core.request.QBRequestGetBuilder;
+import com.quickblox.customobjects.QBCustomObjects;
+import com.quickblox.customobjects.model.QBCustomObject;
 import com.quickblox.users.QBUsers;
 import com.quickblox.users.model.QBUser;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * Created by daniel.garcimartin on 22/11/2016.
@@ -34,6 +43,7 @@ public class QBAdmin {
         QBSettings.getInstance().init(activity, APP_ID, AUTH_KEY, AUTH_SECRET);
         QBSettings.getInstance().setAccountKey(ACCOUNT_KEY);
         this.listener = listener;
+
 
         QBAuth.createSession(new QBEntityCallback<QBSession>() {
 
@@ -100,6 +110,7 @@ public class QBAdmin {
             });
 
         }else{
+
             Log.v("Controller", "Las contraseñas no son iguales");
         }
 
@@ -107,9 +118,35 @@ public class QBAdmin {
     }
 
 
-    public void selectTabla() {
-        //listener.datosDescargados();
-    }
+    public void selectTablaIdiomas(String id_idioma) {
+
+        QBRequestGetBuilder requestBuilder =new QBRequestGetBuilder();
+
+        requestBuilder.eq("idioma",id_idioma);
+
+        QBCustomObjects.getObjects("idiomas",requestBuilder ,new QBEntityCallback<ArrayList <QBCustomObject>>(){
+            @Override
+            public void onSuccess(ArrayList<QBCustomObject> customObjects, Bundle params) {
+                HashMap<Integer,String> palabras=new HashMap<Integer, String>();
+                for (int i=0;i<customObjects.size();i++){
+                    Log.v("QBAdmin","Fila"+i+" "+customObjects.get(i).getFields());
+                    String sValor=customObjects.get(i).getFields().get("valor").toString();
+                    int iPalabra=(int)customObjects.get(i).getFields().get("idp");
+
+                    palabras.put(iPalabra,sValor);
+                }
+
+                listener.datosTablaIdiomaDescargados(palabras);
+            }
+
+            @Override
+            public void onError(QBResponseException errors) {
+
+            }
+        });
+
+        }
+
 
 
 }

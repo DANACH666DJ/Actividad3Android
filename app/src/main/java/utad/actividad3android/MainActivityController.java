@@ -1,6 +1,7 @@
 package utad.actividad3android;
 
 import android.content.Context;
+import android.content.Intent;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,7 @@ import com.quickblox.core.model.QBBaseCustomObject;
 import com.quickblox.users.model.QBUser;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import utad.libreria.QBAdmin;
 import utad.libreria.QBAdminListener;
@@ -62,6 +64,7 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+
         } else if (logeado == false) {
             Log.v("Controller", "Login incorrecto ");
             Context context = vista.getApplicationContext();
@@ -71,7 +74,6 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
             toast.show();
 
         }
-
     }
 
     @Override
@@ -96,6 +98,11 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
 
     @Override
     public void datosDescargados(ArrayList<QBBaseCustomObject> datos) {
+
+    }
+
+    @Override
+    public void datosTablaIdiomaDescargados(HashMap<Integer, String> p) {
 
     }
 }
