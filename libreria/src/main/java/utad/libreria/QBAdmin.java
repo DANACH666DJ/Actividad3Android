@@ -122,16 +122,16 @@ public class QBAdmin {
 
         QBRequestGetBuilder requestBuilder =new QBRequestGetBuilder();
 
-        requestBuilder.eq("idioma",id_idioma);
+        requestBuilder.eq("IdIdioma",id_idioma);
 
-        QBCustomObjects.getObjects("idiomas",requestBuilder ,new QBEntityCallback<ArrayList <QBCustomObject>>(){
+        QBCustomObjects.getObjects("Idiomas",requestBuilder ,new QBEntityCallback<ArrayList <QBCustomObject>>(){
             @Override
             public void onSuccess(ArrayList<QBCustomObject> customObjects, Bundle params) {
                 HashMap<Integer,String> palabras=new HashMap<Integer, String>();
                 for (int i=0;i<customObjects.size();i++){
                     Log.v("QBAdmin","Fila"+i+" "+customObjects.get(i).getFields());
-                    String sValor=customObjects.get(i).getFields().get("valor").toString();
-                    int iPalabra=(int)customObjects.get(i).getFields().get("idp");
+                    String sValor=customObjects.get(i).getFields().get("Valor").toString();
+                    int iPalabra=(int)customObjects.get(i).getFields().get("IdPalabra");
 
                     palabras.put(iPalabra,sValor);
                 }

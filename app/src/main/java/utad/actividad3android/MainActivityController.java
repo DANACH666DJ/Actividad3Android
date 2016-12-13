@@ -22,7 +22,6 @@ import utad.libreria.QBAdminListener;
 
 public class MainActivityController implements View.OnClickListener, View.OnFocusChangeListener, QBAdminListener {
     MainActivity vista;
-    ActivityLogeado vistaLog;
     QBAdmin qbAdmin;
 
 
@@ -107,6 +106,8 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
 
     @Override
     public void datosTablaIdiomaDescargados(HashMap<Integer, String> p) {
+
+
 
     }
 }
