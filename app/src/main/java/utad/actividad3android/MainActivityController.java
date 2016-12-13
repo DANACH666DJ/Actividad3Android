@@ -22,6 +22,7 @@ import utad.libreria.QBAdminListener;
 
 public class MainActivityController implements View.OnClickListener, View.OnFocusChangeListener, QBAdminListener {
     MainActivity vista;
+    ActivityLogeado vistaLog;
     QBAdmin qbAdmin;
 
 
@@ -64,6 +65,9 @@ public class MainActivityController implements View.OnClickListener, View.OnFocu
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+            Intent intent = new Intent(vista, ActivityLogeado.class);
+            vista.startActivity(intent);
+            vista.finish();
 
         } else if (logeado == false) {
             Log.v("Controller", "Login incorrecto ");
