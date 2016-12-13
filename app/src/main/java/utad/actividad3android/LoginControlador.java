@@ -21,6 +21,8 @@ public class LoginControlador implements View.OnClickListener, View.OnFocusChang
     @Override
     public void onClick(View view) {
 
+
+
     }
 
     @Override
