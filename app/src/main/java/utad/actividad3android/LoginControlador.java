@@ -28,6 +28,14 @@ public class LoginControlador implements View.OnClickListener, View.OnFocusChang
 
     @Override
     public void onClick(View view) {
+        if(view.getId() == vista.btnEngland.getId()){
+            qbAdmin.selectTablaIdiomas("England");
+        }else if(view.getId() == vista.btnFrance.getId()){
+            qbAdmin.selectTablaIdiomas("France");
+        }else if(view.getId() == vista.btnSpain.getId()){
+            qbAdmin.selectTablaIdiomas("Spain");
+
+        }
 
 
 
@@ -55,6 +63,12 @@ public class LoginControlador implements View.OnClickListener, View.OnFocusChang
 
     @Override
     public void datosTablaIdiomaDescargados(HashMap<Integer, String> p) {
+        vista.texto1.setText(p.get(1));
+        vista.texto2.setText(p.get(2));
+        vista.btnFrance.setText(p.get(3));
+        vista.btnEngland.setText(p.get(4));
+        vista.btnSpain.setText(p.get(5));
+
 
     }
 }
