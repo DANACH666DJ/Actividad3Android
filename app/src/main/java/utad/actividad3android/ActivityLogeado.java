@@ -1,5 +1,6 @@
 package utad.actividad3android;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -36,6 +37,12 @@ public class ActivityLogeado extends AppCompatActivity {
 
         texto1.setOnClickListener(controlador);
         texto2.setOnClickListener(controlador);
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "american.ttf");
+
+        texto1.setTypeface(font);
+        texto2.setTypeface(font);
+
 
 
 

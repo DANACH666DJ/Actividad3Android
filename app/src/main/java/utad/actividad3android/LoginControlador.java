@@ -30,6 +30,7 @@ public class LoginControlador implements View.OnClickListener, View.OnFocusChang
     public void onClick(View view) {
         if(view.getId() == vista.btnEngland.getId()){
             qbAdmin.selectTablaIdiomas("England");
+
         }else if(view.getId() == vista.btnFrance.getId()){
             qbAdmin.selectTablaIdiomas("France");
         }else if(view.getId() == vista.btnSpain.getId()){
