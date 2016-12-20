@@ -1,6 +1,7 @@
 package com.example.examen1android;
 
 import android.view.View;
+import android.widget.Button;
 
 import utad.libreria.QBAdmin;
 
@@ -10,6 +11,7 @@ import utad.libreria.QBAdmin;
 
 public class Controlador implements View.OnClickListener, View.OnFocusChangeListener{
     MainActivity vista;
+    Button hola;
 
     public Controlador(MainActivity vista) {
         this.vista = vista;
