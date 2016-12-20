@@ -79,9 +79,9 @@ public class Controlador implements View.OnClickListener, View.OnFocusChangeList
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-            /*Intent intent = new Intent(vista, ActivityLogeado.class);
+            Intent intent = new Intent(vista, SegundoActivity.class);
             vista.startActivity(intent);
-            vista.finish();*/
+            vista.finish();
 
 
         } else if (logeado == false) {
