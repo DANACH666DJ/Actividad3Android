@@ -1,5 +1,6 @@
 package com.example.examen1android;
 
+import android.content.Intent;
 import android.view.View;
 
 import utad.libreria.QBAdmin;
@@ -17,6 +18,12 @@ public class SegundoControlador implements View.OnClickListener, View.OnFocusCha
 
     }
     public void onClick(View view) {
+        if (view.getId() == vista.categNot.btnVolver.getId()) {
+            Intent intent = new Intent(vista, MainActivity.class);
+            vista.startActivity(intent);
+            vista.finish();
+
+        }
 
     }
 

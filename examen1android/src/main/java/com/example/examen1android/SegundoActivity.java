@@ -16,6 +16,7 @@ public class SegundoActivity extends AppCompatActivity {
     Button btnArte;
     Button btnPolitica;
     Button btnCine;
+    Button btnVolver;
 
     FragmentTransaction transaction;
     SegundoControlador controlador;
@@ -29,6 +30,30 @@ public class SegundoActivity extends AppCompatActivity {
         categNot=(CategoriaNoticias) fm.findFragmentById(R.id.fragmentCatNoticias);
         noticias=(Noticias) fm.findFragmentById(R.id.fragmentNoticias);
         inforNot=(InformacionNoticia) fm.findFragmentById(R.id.fragmentInforNoticia);
+
+        btnDeportes=categNot.btnDeportes;
+        btnDeportes.setOnClickListener(controlador);
+
+        btnTurismo=categNot.btnTurismo;
+        btnTurismo.setOnClickListener(controlador);
+
+        btnTecnologia=categNot.btnTecnologia;
+        btnTecnologia.setOnClickListener(controlador);
+
+        btnArte=categNot.btnArte;
+        btnArte.setOnClickListener(controlador);
+
+        btnPolitica=categNot.btnPolitica;
+        btnPolitica.setOnClickListener(controlador);
+
+        btnCine=categNot.btnCine;
+        btnCine.setOnClickListener(controlador);
+
+        btnVolver=categNot.btnVolver;
+        btnVolver.setOnClickListener(controlador);
+
+
+
 
 
     }

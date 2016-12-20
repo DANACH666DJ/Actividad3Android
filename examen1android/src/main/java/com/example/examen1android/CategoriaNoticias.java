@@ -20,6 +20,7 @@ public class CategoriaNoticias extends Fragment {
     Button btnArte;
     Button btnPolitica;
     Button btnCine;
+    Button btnVolver;
 
 
     public CategoriaNoticias() {
@@ -39,6 +40,7 @@ public class CategoriaNoticias extends Fragment {
         btnArte=(Button) v.findViewById(R.id.btnArte);
         btnPolitica=(Button) v.findViewById(R.id.btnPolitica);
         btnCine=(Button) v.findViewById(R.id.btnCine);
+        btnVolver=(Button) v.findViewById(R.id.btnVolver);
 
 
 
