@@ -5,12 +5,24 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="Deportes">Deportes</string>
-    <string name="Tecnologia">Tecnologia</string>
-    <string name="Politica">Politica</string>
-    <string name="Arte">Arte</string>
-    <string name="Turismo">Turismo</string>
-    <string name="Cine">Cine</string>
+    <string name="Deportes1">El madrid gana la liga tras una gran victoria</string>
+    <string name="Deportes2">El barcelona gana la liga tras una gran victoria</string>
+    <string name="Deportes3">El atleti gana la liga tras una gran victoria</string>
+    <string name="Tecnologia1">Las apps triunfa en el mercado nipon</string>
+    <string name="Tecnologia2">Las apps triunfa en el mercado americano</string>
+    <string name="Tecnologia3">Las apps triunfa en el mercado español</string>
+    <string name="Politica1">Rajoy abandona la presidencia</string>
+    <string name="Politica2">Trump abandona la presidencia</string>
+    <string name="Politica3">Merkel abandona la presidencia</string>
+    <string name="Arte1">Miguel angel era el mas grande</string>
+    <string name="Arte2">Davinci era el mas grande</string>
+    <string name="Arte3">Mozart era el mas grande</string>
+    <string name="Turismo1">España domina el turismo</string>
+    <string name="Turismo2">Brasil domina el turismo</string>
+    <string name="Turismo3">Holanda domina el turismo</string>
+    <string name="Cine1">Star wars es la mejor pelicula</string>
+    <string name="Cine2">Matrix es la mejor pelicula</string>
+    <string name="Cine3">El señor de los anillos es la mejor pelicula</string>
 
 
 

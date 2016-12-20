@@ -1,13 +1,47 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context="com.example.examen1android.Noticias">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/GRISPURO"
+        android:text="Noticias"
+        android:id="@+id/textoLogin"
+        android:textSize="26dp"
+        android:gravity="center_horizontal"
+        tools:ignore="HardcodedText,PrivateResource,SpUsage" />
 
-</FrameLayout>
+    <Button
+        android:text="Noticia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textoLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:id="@+id/btnNoticia1" />
+
+    <Button
+        android:text="Noticia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNoticia1"
+        android:layout_alignEnd="@+id/btnNoticia1"
+        android:layout_marginTop="49dp"
+        android:id="@+id/btnNoticia2" />
+
+    <Button
+        android:text="Noticia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNoticia2"
+        android:layout_alignEnd="@+id/btnNoticia2"
+        android:layout_marginTop="33dp"
+        android:id="@+id/btnNoticia3" />
+
+
+</RelativeLayout>

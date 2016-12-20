@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SegundoActivity extends AppCompatActivity {
     CategoriaNoticias categNot;
@@ -17,6 +18,11 @@ public class SegundoActivity extends AppCompatActivity {
     Button btnPolitica;
     Button btnCine;
     Button btnVolver;
+    Button btnnoticia1;
+    Button btnnoticia2;
+    Button btnnoticia3;
+    Button btnVolverNoticia;
+    TextView txtNoticia;
 
     FragmentTransaction transaction;
     SegundoControlador controlador;
@@ -51,6 +57,22 @@ public class SegundoActivity extends AppCompatActivity {
 
         btnVolver=categNot.btnVolver;
         btnVolver.setOnClickListener(controlador);
+
+        btnnoticia1=noticias.noticia1;
+        btnnoticia1.setOnClickListener(controlador);
+
+        btnnoticia2=noticias.noticia2;
+        btnnoticia2.setOnClickListener(controlador);
+
+
+        btnnoticia3=noticias.noticia3;
+        btnnoticia3.setOnClickListener(controlador);
+
+        btnVolverNoticia=inforNot.btnVolver;
+        btnVolverNoticia.setOnClickListener(controlador);
+
+        txtNoticia=inforNot.txtNoticia;
+        txtNoticia.setOnClickListener(controlador);
 
 
         transaction=fm.beginTransaction();
