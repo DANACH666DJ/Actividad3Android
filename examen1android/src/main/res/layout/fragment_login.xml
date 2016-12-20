@@ -22,7 +22,7 @@
         android:textColor="@color/NEGRO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
+        android:id="@+id/txtUsuario"
         android:textSize="24sp"
         android:layout_marginBottom="29dp"
         android:layout_alignBottom="@+id/usuario"
@@ -89,6 +89,36 @@
         android:layout_marginBottom="12dp"
         android:layout_above="@+id/botonRegistro"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Español"
+        android:layout_width="10sp"
+        android:layout_height="50sp"
+        android:background="@drawable/spain"
+        android:id="@+id/btnSpain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/botonRegistro" />
+
+    <Button
+        android:text="Frances"
+        android:layout_width="10sp"
+        android:layout_height="50sp"
+        android:background="@drawable/francia"
+        android:id="@+id/btnFrance"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/btnSpain"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <Button
+        android:text="Inglés"
+        android:layout_width="140sp"
+        android:layout_height="50sp"
+        android:background="@drawable/england"
+        android:id="@+id/btnEngland"
+        android:layout_above="@+id/btnOkLogin"
+        android:layout_toStartOf="@+id/btnFrance"
+        android:layout_marginBottom="12dp" />
 
 
 </RelativeLayout>

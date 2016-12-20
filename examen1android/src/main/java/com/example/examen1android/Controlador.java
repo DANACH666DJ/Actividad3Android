@@ -51,6 +51,18 @@ public class Controlador implements View.OnClickListener, View.OnFocusChangeList
             qbAdmin.Registro(nombre, email, contraseña, repetirContraseña);
         }
 
+
+       //Comprobamos los botones de cambiar idiomas y e lo mandamos a qbAdmin
+        if(view.getId() == vista.btnEngland.getId()){
+            qbAdmin.selectTablaIdiomas("England");
+
+        }else if(view.getId() == vista.btnFrance.getId()){
+            qbAdmin.selectTablaIdiomas("France");
+        }else if(view.getId() == vista.btnSpain.getId()){
+            qbAdmin.selectTablaIdiomas("Spain");
+
+        }
+
     }
 
     @Override
@@ -108,6 +120,11 @@ public class Controlador implements View.OnClickListener, View.OnFocusChangeList
 
     @Override
     public void datosTablaIdiomaDescargados(HashMap<Integer, String> p) {
+        /*vista.loginFragment.(p.get(1));
+        vista.texto2.setText(p.get(2));
+        vista.btnFrance.setText(p.get(3));
+        vista.btnEngland.setText(p.get(4));
+        vista.btnSpain.setText(p.get(5));*/
 
     }
 }

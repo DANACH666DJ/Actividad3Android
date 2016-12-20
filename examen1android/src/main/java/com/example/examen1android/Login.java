@@ -18,6 +18,9 @@ public class Login extends Fragment {
     public EditText contraseña;
     public Button btnRegistro;
     public Button btnOkLogin;
+    public Button btnSpain;
+    public Button btnEngland;
+    public Button btnFrance;
 
 
     public Login() {
@@ -34,6 +37,9 @@ public class Login extends Fragment {
         contraseña=(EditText)v.findViewById(R.id.contraseña);
         btnRegistro=(Button)v.findViewById(R.id.botonRegistro);
         btnOkLogin=(Button)v.findViewById(R.id.btnOkLogin);
+        btnSpain=(Button)v.findViewById(R.id.btnSpain);
+        btnFrance=(Button)v.findViewById(R.id.btnFrance);
+        btnEngland=(Button)v.findViewById(R.id.btnEngland);
         return v;
     }
 

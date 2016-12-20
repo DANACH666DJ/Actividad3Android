@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     Button btnRegistro;
     Button btnOkLogin;
     Button btnOkRegistro;
+    Button btnSpain;
+    Button btnEngland;
+    Button btnFrance;
     FragmentTransaction transaction;
     Controlador controlador;
 
@@ -35,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
 
         btnOkRegistro=registroFragment.btnOkRegistro;
         btnOkRegistro.setOnClickListener(controlador);
+
+
+        btnEngland=loginFragment.btnEngland;
+        btnEngland.setOnClickListener(controlador);
+
+        btnSpain=loginFragment.btnSpain;
+        btnSpain.setOnClickListener(controlador);
+
+        btnFrance=loginFragment.btnFrance;
+        btnFrance.setOnClickListener(controlador);
 
         transaction=fm.beginTransaction();
         cambiarFragment(1);
