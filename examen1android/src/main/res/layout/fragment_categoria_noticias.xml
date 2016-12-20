@@ -1,13 +1,79 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context="com.example.examen1android.CategoriaNoticias">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/GRISPURO"
+        android:text="Categoria Noticias"
+        android:id="@+id/textoLogin"
+        android:textSize="26dp"
+        android:gravity="center_horizontal"
+        tools:ignore="HardcodedText,PrivateResource,SpUsage" />
 
-</FrameLayout>
+
+    <Button
+        android:text="Turismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnTurismo"
+        android:layout_below="@+id/btnTecnologia"
+        android:layout_alignStart="@+id/btnTecnologia"
+        android:layout_alignEnd="@+id/btnTecnologia" />
+
+    <Button
+        android:text="Deportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDeportes"
+        android:layout_below="@+id/btnTurismo"
+        android:layout_alignStart="@+id/btnTurismo"
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/btnTurismo" />
+
+    <Button
+        android:text="Arte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnArte"
+        android:layout_below="@+id/btnDeportes"
+        android:layout_alignStart="@+id/btnDeportes"
+        android:layout_marginTop="22dp"
+        android:layout_alignEnd="@+id/btnDeportes" />
+
+    <Button
+        android:text="Politica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPolitica"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/btnArte"
+        android:layout_alignStart="@+id/btnArte"
+        android:layout_alignEnd="@+id/btnArte" />
+
+    <Button
+        android:text="Cine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/btnCine"
+        android:layout_below="@+id/btnPolitica"
+        android:layout_alignStart="@+id/btnPolitica"
+        android:layout_alignEnd="@+id/btnPolitica" />
+
+    <Button
+        android:text="Tecnologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTecnologia"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textoLogin"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
