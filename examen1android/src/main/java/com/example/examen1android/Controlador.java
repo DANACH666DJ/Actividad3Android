@@ -11,7 +11,7 @@ import utad.libreria.QBAdmin;
 
 public class Controlador implements View.OnClickListener, View.OnFocusChangeListener{
     MainActivity vista;
-    Button hola;
+    
 
     public Controlador(MainActivity vista) {
         this.vista = vista;
