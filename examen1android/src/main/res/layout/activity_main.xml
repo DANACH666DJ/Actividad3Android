@@ -14,4 +14,10 @@
         android:layout_height="match_parent"
         android:name="com.example.examen1android.Login"
         android:id="@+id/fragmentLogin" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.examen1android.Registro"
+        android:id="@+id/fragmentRegistro" />
 </RelativeLayout>
