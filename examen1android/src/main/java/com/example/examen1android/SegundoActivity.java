@@ -53,8 +53,27 @@ public class SegundoActivity extends AppCompatActivity {
         btnVolver.setOnClickListener(controlador);
 
 
+        transaction=fm.beginTransaction();
+        cambiarFragment(1);
+        //transaction.commit();
 
+    }
 
+    public void cambiarFragment(int ifrg){
+        FragmentManager fm=getSupportFragmentManager();
+        transaction=fm.beginTransaction();
+        transaction.hide(categNot);
+        transaction.hide(noticias);
+        transaction.hide(inforNot);
+
+        if(ifrg==1){
+            transaction.show(categNot);
+        }else if(ifrg==2){
+            transaction.show(noticias);
+        }else if(ifrg==3){
+            transaction.show(inforNot);
+        }
+        transaction.commit();
 
     }
 }
