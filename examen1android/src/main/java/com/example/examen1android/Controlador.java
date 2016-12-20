@@ -79,6 +79,9 @@ public class Controlador implements View.OnClickListener, View.OnFocusChangeList
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+            /*Intent intent = new Intent(vista, ActivityLogeado.class);
+            vista.startActivity(intent);
+            vista.finish();*/
 
 
         } else if (logeado == false) {
@@ -102,7 +105,7 @@ public class Controlador implements View.OnClickListener, View.OnFocusChangeList
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-            vista.cambiarFragment(3);
+            vista.cambiarFragment(1);
         } else if (registrado == false) {
             Context context = vista.getApplicationContext();
             CharSequence text = "El usuario ya existe ";
