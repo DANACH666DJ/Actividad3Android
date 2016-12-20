@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoColor"
+    tools:context="com.example.examen1android.Login">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GRISPURO"
+        android:text="LOGIN"
+        android:id="@+id/textoLogin"
+        android:textSize="26dp"
+        android:gravity="center_horizontal"
+        tools:ignore="HardcodedText,PrivateResource,SpUsage" />
+
+    <TextView
+        android:text="Usuario"
+        android:textColor="@color/NEGRO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignBottom="@+id/usuario"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Registro"
+        android:id="@+id/botonRegistro"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="@color/GRISLIGHT"
+        android:ems="10"
+        android:id="@+id/usuario"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Contraseña"
+        android:textColor="@color/NEGRO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="@color/GRISLIGHT"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/contraseña"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/usuario" />
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="120sp"
+        android:src="@drawable/iconoUser"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/textoLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOkLogin"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/botonRegistro"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
