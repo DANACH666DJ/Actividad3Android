@@ -16,6 +16,7 @@ public class Noticias extends Fragment {
     Button noticia1 ;
     Button noticia2;
     Button noticia3;
+    Button btnCategNoticias;
 
 
     public Noticias() {
@@ -32,6 +33,7 @@ public class Noticias extends Fragment {
         noticia1=(Button)v.findViewById(R.id.btnNoticia1);
         noticia2=(Button)v.findViewById(R.id.btnNoticia2);
         noticia3=(Button) v.findViewById(R.id.btnNoticia3);
+        btnCategNoticias=(Button)v.findViewById(R.id.btnCategNoticias);
 
 
 

@@ -23,6 +23,7 @@ public class SegundoActivity extends AppCompatActivity {
     Button btnnoticia3;
     Button btnVolverNoticia;
     TextView txtNoticia;
+    Button btnCategNoticias;
 
     FragmentTransaction transaction;
     SegundoControlador controlador;
@@ -68,8 +69,12 @@ public class SegundoActivity extends AppCompatActivity {
         btnnoticia3=noticias.noticia3;
         btnnoticia3.setOnClickListener(controlador);
 
-        btnVolverNoticia=inforNot.btnVolver;
+        btnVolverNoticia=inforNot.btnNoticias;
         btnVolverNoticia.setOnClickListener(controlador);
+
+
+        btnCategNoticias=noticias.btnCategNoticias;
+        btnCategNoticias.setOnClickListener(controlador);
 
         txtNoticia=inforNot.txtNoticia;
         txtNoticia.setOnClickListener(controlador);

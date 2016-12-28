@@ -14,7 +14,7 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class InformacionNoticia extends Fragment {
-    Button btnVolver ;
+    Button btnNoticias ;
     TextView txtNoticia;
 
 
@@ -29,7 +29,7 @@ public class InformacionNoticia extends Fragment {
         // Inflate the layout for this fragment
         View v=inflater.inflate(R.layout.fragment_informacion_noticia, container, false);
 
-        btnVolver=(Button)v.findViewById(R.id.btnVolver);
+        btnNoticias=(Button)v.findViewById(R.id.btnNoticias);
         txtNoticia=(TextView) v.findViewById(R.id.txtNoticia);
 
 

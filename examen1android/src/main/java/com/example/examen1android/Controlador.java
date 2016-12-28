@@ -123,11 +123,14 @@ public class Controlador implements View.OnClickListener, View.OnFocusChangeList
 
     @Override
     public void datosTablaIdiomaDescargados(HashMap<Integer, String> p) {
-        /*vista.loginFragment.(p.get(1));
-        vista.texto2.setText(p.get(2));
+
         vista.btnFrance.setText(p.get(3));
         vista.btnEngland.setText(p.get(4));
-        vista.btnSpain.setText(p.get(5));*/
+        vista.btnSpain.setText(p.get(5));
+        vista.txtUsuario.setText(p.get(6));
+        vista.txtPassword.setText(p.get(7));
+        vista.btnOkLogin.setText(p.get(8));
+        vista.btnRegistro.setText(p.get(9));
 
     }
 }

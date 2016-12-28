@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Registro registroFragment;
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnSpain;
     Button btnEngland;
     Button btnFrance;
+    TextView txtUsuario;
+    TextView txtPassword;
     FragmentTransaction transaction;
     Controlador controlador;
 
@@ -48,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
 
         btnFrance=loginFragment.btnFrance;
         btnFrance.setOnClickListener(controlador);
+
+
+        txtUsuario=loginFragment.txtUsuario;
+        txtUsuario.setOnClickListener(controlador);
+
+        txtPassword=loginFragment.txtPassword;
+        txtPassword.setOnClickListener(controlador);
 
         transaction=fm.beginTransaction();
         cambiarFragment(1);

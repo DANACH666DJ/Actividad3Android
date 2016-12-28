@@ -8,12 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class Login extends Fragment {
+    public TextView txtUsuario;
+    public TextView txtPassword;
     public EditText usuario;
     public EditText contraseña;
     public Button btnRegistro;
@@ -40,6 +43,8 @@ public class Login extends Fragment {
         btnSpain=(Button)v.findViewById(R.id.btnSpain);
         btnFrance=(Button)v.findViewById(R.id.btnFrance);
         btnEngland=(Button)v.findViewById(R.id.btnEngland);
+        txtUsuario=(TextView)v.findViewById(R.id.txtUsuario);
+        txtPassword=(TextView)v.findViewById(R.id.txtPassword);
         return v;
     }
 
